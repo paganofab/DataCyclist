@@ -1,5 +1,7 @@
+##author Fabio Pagano
 ## Import all CSVs into one data frame
-filedir <- setwd("~/Desktop/Cyclist Trip Data/CSV")
+
+filedir <- setwd("your path here")
 file_names <- dir(filedir)
 DataCyclistTrips <- do.call(rbind,lapply(file_names,read.csv))
 
